@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Atividade03.css" rel="stylesheet">
+        <script type="text/javascript" src="Atividade03.js"></script>
+        <title>Atividade 03</title>
+    </head>
+    <body>
+        <div id="cabecalho">
+            <h1 id="titulo">Atividade 03 - Forma de Lagrange</h1>
+            <p id="grupo">|| Alunos: Wellington Joji Endo & Maria Isabelly || Matéria de Calculos Numéricos - Professora: Tânia Camila ||</p>
+        </div>
+        
+        <label id = "entradaX" for="xZero">x0:
+            <input type="number" id="xZero" name="funcao" style="width: 50px; height: 25px; font-size: 20px;" value="-2">,
+        </label>
+        
+        <label id = "entradaX" for="yZero">y0:
+            <input type="number" id="yZero" name="funcao" style="width: 50px; height: 25px; font-size: 20px;" value="2">
+        </label>
+
+        <br><br>
+
+        <label id = "entradaX" for="xUm">x1:
+            <input type="number" id="xUm" name="funcao" style="width: 50px; height: 25px; font-size: 20px;" value="0">,
+        </label>
+        
+        <label id = "entradaX" for="yUm">y1:
+            <input type="number" id="yUm" name="funcao" style="width: 50px; height: 25px; font-size: 20px;" value="-2">
+        </label>
+        
+        <br><br>
+
+        <label id = "entradaX" for="xDois">x2:
+            <input type="number" id="xDois" name="funcao" style="width: 50px; height: 25px; font-size: 20px;" value="4">,
+        </label>
+        
+        <label id = "entradaX" for="yDois">y2:
+            <input type="number" id="yDois" name="funcao" style="width: 50px; height: 25px; font-size: 20px;" value="1">
+        </label>
+
+        <br><br>
+
+        <button onclick="Calcular()" id="calc-but">Calcular</button>
+        <p id="resultado">Resultado</p>
+        <p id="teste"></p>
+        <hr>
+        <table id="tabelaResultado">
+            <thead class="thead"> 
+                <tr>
+                <th id="tiposValores" scope="tabela">x1</th>
+                <th id="tiposValores" scope="tabela">P(x)</th>
+                <th id="tiposValores" scope="tabela">f(xi)</th>
+                <th id="tiposValores" scope="tabela">(x, y)</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </body>
+</html>
